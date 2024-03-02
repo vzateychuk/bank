@@ -1,4 +1,5 @@
 rootProject.name = 'bank'
 include 'common'
 include 'api'
+include 'currency'
 

@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '3.2.3'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'vez'
+version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'vez.ccy.CurrencyApp'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+dependencies {
+    implementation project(':common')
+
+    // implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+
+/*
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+*/
+
+/*
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+*/
+}
+
+test {
+    useJUnitPlatform()
+}
