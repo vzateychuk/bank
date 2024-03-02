@@ -1,2 +1,2 @@
-# expenses
-Application to control my expenses
+# bank
+My finance manager
