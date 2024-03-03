@@ -16,7 +16,7 @@ repositories {
     mavenCentral()
 }
 
-apply from: "$rootDir/common-dependencies.gradle"
+apply from: "$rootDir/common.gradle"
 
 dependencies {
     implementation project(':common')

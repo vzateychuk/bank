@@ -2,7 +2,6 @@
 .idea/
 build/
 .gradle/
-gradle/
 *.iml
 
 # Compiled class file
@@ -18,7 +17,6 @@ gradle/
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
